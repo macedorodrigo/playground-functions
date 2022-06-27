@@ -1,37 +1,43 @@
 // Desafio 1
 function compareTrue(a, b) {
-  if (a === true && b === true){
+  if (a === true && b === true) {
     return true;
   } else {
     return false;
-  } 
+  }
 }
 
 // Desafio 2
 function calcArea(base, height) {
-  return ((base * height) / 2)
+  return (base * height) / 2;
 }
 
 // Desafio 3
 function splitSentence(frase, palavras) {
-  return frase.split(' ')
+  return frase.split(' ');
 }
 
 // Desafio 4
 function concatName(array) {
- return (array[(array.length-1)])+', '+array[0]
+  return array[array.length - 1] + ', ' + array[0];
 }
-
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  return (wins*3)+(ties);
+  return wins * 3 + ties;
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
-}
+function highestCount(numbers) {
+  for (i = 0; i < numbers.length; i += 1) {
+    let vezesNumeros = 0;
+    let bigNumber = Math.max.apply(null, numbers);
+    if (numbers[i] === bigNumber){
+      vezesNumeros += 1;
+    }
+    return vezesNumeros;
+  }
+// console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
 
 // Desafio 7
 function catAndMouse() {
