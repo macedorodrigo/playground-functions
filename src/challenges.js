@@ -18,9 +18,11 @@ function splitSentence(frase, palavras) {
 }
 
 // Desafio 4
-function concatName() {
+function concatName(array) {
+ return array[array.length]+array[0]
   // seu código aqui
 }
+
 
 // Desafio 5
 function footballPoints() {
