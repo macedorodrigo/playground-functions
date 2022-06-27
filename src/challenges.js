@@ -5,7 +5,7 @@ function compareTrue(a, b) {
   } else {
     returm false;
   } 
-  console.log(return)
+
   // seu código aqui para salvar
 }
 
