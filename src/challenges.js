@@ -37,6 +37,7 @@ function highestCount(numbers) {
     }
     return vezesNumeros;
   }
+}
 
 // Desafio 7
 function catAndMouse() {
