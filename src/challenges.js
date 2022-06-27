@@ -5,16 +5,14 @@ function compareTrue(a, b) {
   } else {
     return false;
   } 
-
-  // seu código aqui
 }
 
 // Desafio 2
 function calcArea(base, height) {
-  return ((base * altura) / 2)
+  return ((base * height) / 2)
 // seu código aqui
 }
-console.log(return)
+
 // Desafio 3
 function splitSentence() {
   // seu código aqui
