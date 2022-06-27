@@ -32,7 +32,7 @@ function highestCount(numbers) {
   for (i = 0; i < numbers.length; i += 1) {
     let vezesNumeros = 0;
     let bigNumber = Math.max.apply(null, numbers);
-    if (numbers[i] === bigNumber){
+    if (numbers[i] === bigNumber) {
       vezesNumeros += 1;
     }
     return vezesNumeros;
