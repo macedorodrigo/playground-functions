@@ -13,7 +13,7 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence(frase, palavras) {
+function splitSentence(frase){
   return frase.split(' ');
 }
 
@@ -43,14 +43,14 @@ function highestCount(numbers) {
     vezesNumeros += 1
   }
 }
-  return vezesNumeros
+  return vezesNumeros;
 }
 
 // Desafio 7
-function catAndMouse('mouse', 'cat1', 'cat2') {
-  if ('cat1'==='cat2'){
+function catAndMouse(mouse, cat1, cat2) {
+  if (cat1 === cat2){
     return 'os gatos trombam e o rato foge'
-  }else if('cat1'>'cat2'){
+  }else if(cat1>cat2){
     return 'cat1'
   } else {
     return 'cat2'
