@@ -20,14 +20,12 @@ function splitSentence(frase, palavras) {
 // Desafio 4
 function concatName(array) {
  return array[array.length]+array[0]
-  // seu código aqui
 }
 
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  return (wins*3)+(ties)
-  // seu código aqui
+  return (wins*3)+(ties);
 }
 
 // Desafio 6
