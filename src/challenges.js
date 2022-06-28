@@ -13,7 +13,7 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence(frase){
+function splitSentence(frase) {
   return frase.split(' ');
 }
 
@@ -33,24 +33,25 @@ function highestCount(numbers) {
   let bigNumber = numbers[0];
 
   for (i = 0; i < numbers.length; i += 1) {
-
-    if (bigNumber < numbers[i]){
-      bigNumber = numbers[i]
+    if (bigNumber < numbers[i]) {
+      bigNumber = numbers[i];
     }
   }
-  for (let i2 = 0; i2 < numbers.length; i2 += 1){
-  if(bigNumber === numbers[i2]){
-    vezesNumeros += 1
+  for (let i2 = 0; i2 < numbers.length; i2 += 1) {
+    if (bigNumber === numbers[i2]) {
+      vezesNumeros += 1;
+    }
   }
-}
   return vezesNumeros;
 }
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  if (cat1 === cat2){
+  let distanciaGato1 = Math.abs(mouse - cat1);
+  let distanciaGato2 = Math.abs(mouse - cat2);
+  if (distanciaGato2 === distanciaGato1){
     return 'os gatos trombam e o rato foge'
-  }else if(Math.abs(cat1) > Math.abs(cat2)){
+  } else if(distanciaGato1 < distanciaGato2){
     return 'cat1'
   } else {
     return 'cat2'
