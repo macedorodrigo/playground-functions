@@ -49,33 +49,33 @@ function highestCount(numbers) {
 function catAndMouse(mouse, cat1, cat2) {
   let distanciaGato1 = Math.abs(mouse - cat1);
   let distanciaGato2 = Math.abs(mouse - cat2);
-  if (distanciaGato2 === distanciaGato1){
-    return 'os gatos trombam e o rato foge'
-  } else if(distanciaGato1 < distanciaGato2){
-    return 'cat1'
+  if (distanciaGato2 === distanciaGato1) {
+    return 'os gatos trombam e o rato foge';
+  } else if (distanciaGato1 < distanciaGato2) {
+    return 'cat1';
   } else {
-    return 'cat2'
+    return 'cat2';
   }
 }
 
 // Desafio 8
 function fizzBuzz(numbers) {
-  for(i = 0; i < numbers.length; i += 1){
-  let divisor3 = numbers[i] % 3;
-  let divisor5 = numbers[i] % 5;
-  let divisor15 = numbers[i] % 15;
-  if (divisor15 === 0){
-    return 'fizzBuzz'
-  } else if(divisor3 === 0){
-    return 'fizz'
-  } else if(divisor5 === 0){
-    return 'buzz'
-  } else {
-    return 'bug!'
+  let resultado = [];
+  for (i = 0; i < numbers.length; i += 1) {
+    // let divisor3 = numbers[i] % 3;
+    // let divisor5 = numbers[i] % 5;
+    if (numbers[i] % 3 === 0 && numbers[i] % 5 === 0) {
+      resultado.push('fizzBuzz');
+    } else if (numbers[i] % 3 === 0) {
+      resultado.push('fizz');
+    } else if (numbers[i] % 5 === 0) {
+      resultado.push('buzz');
+    } else {
+      resultado.push('bug!');
+    }
   }
+  return resultado;
 }
-}
-
 // Desafio 9
 function encode() {
   // seu código aqui
