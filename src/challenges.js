@@ -59,8 +59,21 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(numbers) {
+  for(i = 0; i < numbers.length; i += 1){
+  let divisor3 = numbers[i] % 3;
+  let divisor5 = numbers[i] % 5;
+  let divisor15 = numbers[i] % 15;
+  if (divisor15 === 0){
+    return 'fizzBuzz'
+  } else if(divisor3 === 0){
+    return 'fizz'
+  } else if(divisor5 === 0){
+    return 'buzz'
+  } else {
+    return 'bug!'
+  }
+}
 }
 
 // Desafio 9
