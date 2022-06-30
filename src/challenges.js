@@ -62,8 +62,6 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(numbers) {
   let resultado = [];
   for (i = 0; i < numbers.length; i += 1) {
-    // let divisor3 = numbers[i] % 3;
-    // let divisor5 = numbers[i] % 5;
     if (numbers[i] % 3 === 0 && numbers[i] % 5 === 0) {
       resultado.push('fizzBuzz');
     } else if (numbers[i] % 3 === 0) {
@@ -77,11 +75,44 @@ function fizzBuzz(numbers) {
   return resultado;
 }
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(trocaCodigo) {
+  let fraseCodificada = '';
+  for (let i = 0; i < trocaCodigo.length; i += 1) {
+    if (trocaCodigo[i] === 'a') {
+      fraseCodificada += 1;
+    } else if (trocaCodigo[i] === 'e') {
+      fraseCodificada += 2;
+    } else if (trocaCodigo[i] === 'i') {
+      fraseCodificada += 3;
+    } else if (trocaCodigo[i] === 'o') {
+      fraseCodificada += 4;
+    } else if (trocaCodigo[i] === 'u') {
+      fraseCodificada += 5;
+    } else {
+      fraseCodificada += trocaCodigo[i];
+    }
+  }
+  return fraseCodificada;
 }
-function decode() {
-  // seu código aqui
+
+function decode(trocaDecodificada) {
+  let fraseDecodificada = '';
+  for (let i = 0; i < trocaDecodificada.length; i += 1) {
+    if (trocaDecodificada[i] === '1') {
+      fraseDecodificada += 'a';
+    } else if (trocaDecodificada[i] === '2') {
+      fraseDecodificada += 'e';
+    } else if (trocaDecodificada[i] === '3') {
+      fraseDecodificada += 'i';
+    } else if (trocaDecodificada[i] === '4') {
+      fraseDecodificada += 'o';
+    } else if (trocaDecodificada[i] === '5') {
+      fraseDecodificada += 'u';
+    } else {
+      fraseDecodificada += trocaDecodificada[i];
+    }
+  }
+  return fraseDecodificada;
 }
 
 // Desafio 10
