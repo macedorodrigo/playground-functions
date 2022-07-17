@@ -116,9 +116,19 @@ function decode(trocaDecodificada) {
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(arrayList, nome) {
+  let arrayListENome = [];
+  arrayList=arrayList.sort();
+  for (let index = 0; index < arrayList.length; index += 1) {
+    arrayListENome.push({tech:arrayList[index], name: nome });
+  }
+  if(arrayList.length === 0) {
+      return 'Vazio!';
+    }
+  
+  return arrayListENome;
 }
+console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 
 module.exports = {
   calcArea,
