@@ -1,3 +1,4 @@
+//Desafio 11
 function generatePhoneNumber(numbers) {
   if (numbers.length !== 11) {
     return 'Array com tamanho incorreto.';
@@ -29,6 +30,7 @@ function triangleCheck(lineA, lineB, lineC) {
   return sides[0] + sides[1] > sides[2];
 }
 
+//Desafio 13
 function hydrate(beverages) {
   const total = beverages.match(/\d+/g).reduce((acc, cur) => acc + parseInt(cur), 0);
   return total === 1 ? `${total} copo de água` : `${total} copos de água`;
